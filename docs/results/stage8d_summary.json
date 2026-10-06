@@ -1,0 +1,5386 @@
+{
+  "stage": "8D",
+  "freeze_sha256": "c33674faab4894b0e80ce53e1026e3d339e6013b704ad680d3c1ac12fe8c1d3c",
+  "stage8c_revision": "b84fdab4a601217cd17a7bdbeccf8b693bc99104",
+  "no_warning_model_or_threshold_fit": true,
+  "calibration_refitted": false,
+  "new_predictions_generated": false,
+  "study": "retrospective audit primary; historically exposed fresh ID replication",
+  "source_sha256": {
+    "examples/analyze_stage8d.py": "ec0513ed11b072db37bca37349281c3979da14fbe0563d84cc0d593f077795ea",
+    "stage8_uq/rollout_warning.py": "59bdcc79a00ab7d75a6c2f55adbdea8aebef4201f18363fd0f52df01912d185e",
+    "stage8_uq/rollout_warning_io.py": "8d1bdb77de2380a0cd019ab11a459756998a174d02d916e0083828f0097f0608",
+    "stage8_uq/rollout_warning_plots.py": "51089804a7528f7e1f742b83e6f9c293b3b18baf61a19694f2685774f02fbe13"
+  },
+  "datasets": {
+    "audit": {
+      "by_horizon": [
+        {
+          "time": 0.1,
+          "n_trajectories": 256,
+          "coverage90": 0.90625,
+          "mean_E": 0.018305853677222754,
+          "median_E": 0.01757094675841623,
+          "mean_U_rel": 0.013237771289527482,
+          "median_U_rel": 0.013068054673424045,
+          "mean_U_rms": 0.0035528787471292528,
+          "median_U_rms": 0.0032720439672038024,
+          "mean_W_rel90": 0.6834902474966911,
+          "median_W_rel90": 0.6747274694271977,
+          "U_rel_q10": 0.006105648429423729,
+          "U_rel_median": 0.013068054673424045,
+          "U_rel_q90": 0.019884455030450218,
+          "U_rel_q90_minus_q10": 0.013778806601026488,
+          "U_rel_gap_over_median": 1.0543885027545736,
+          "W_rel90_q10": 0.3152457513339896,
+          "W_rel90_median": 0.6747274694271977,
+          "W_rel90_q90": 1.026670637590715,
+          "W_rel90_q90_minus_q10": 0.7114248862567255,
+          "W_rel90_gap_over_median": 1.0543885027545739,
+          "current_error_association": {
+            "n_trajectories": 256,
+            "pearson": 0.7952713536584547,
+            "pearson_ci95": [
+              0.743405232701413,
+              0.8466448919561691
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8463921950102998,
+            "spearman_ci95": [
+              0.8008615128521321,
+              0.880934863075692
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.2,
+          "n_trajectories": 256,
+          "coverage90": 0.9296875,
+          "mean_E": 0.03385830802769619,
+          "median_E": 0.03194420072659437,
+          "mean_U_rel": 0.023688440597260357,
+          "median_U_rel": 0.023472224363726743,
+          "mean_U_rms": 0.006350926818118791,
+          "median_U_rms": 0.005692655303844476,
+          "mean_W_rel90": 1.2613856694207237,
+          "median_W_rel90": 1.2498723721500298,
+          "U_rel_q10": 0.010922716636781099,
+          "U_rel_median": 0.023472224363726743,
+          "U_rel_q90": 0.03577646554004664,
+          "U_rel_q90_minus_q10": 0.02485374890326554,
+          "U_rel_gap_over_median": 1.0588578448352668,
+          "W_rel90_q10": 0.5816236902640373,
+          "W_rel90_median": 1.2498723721500298,
+          "W_rel90_q90": 1.9050608565579603,
+          "W_rel90_q90_minus_q10": 1.323437166293923,
+          "W_rel90_gap_over_median": 1.0588578448352668,
+          "current_error_association": {
+            "n_trajectories": 256,
+            "pearson": 0.7756467720046856,
+            "pearson_ci95": [
+              0.7120063956943516,
+              0.8340964625858447
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8308151178759442,
+            "spearman_ci95": [
+              0.7810575048394133,
+              0.8698318250400702
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.3,
+          "n_trajectories": 256,
+          "coverage90": 0.90234375,
+          "mean_E": 0.047982615591525835,
+          "median_E": 0.04427836996147816,
+          "mean_U_rel": 0.03327206446126848,
+          "median_U_rel": 0.03249738735637531,
+          "mean_U_rms": 0.008886778636575736,
+          "median_U_rms": 0.007952437981512146,
+          "mean_W_rel90": 1.6708647941126398,
+          "median_W_rel90": 1.6319618669174285,
+          "U_rel_q10": 0.014783913827602168,
+          "U_rel_median": 0.03249738735637531,
+          "U_rel_q90": 0.05122752455941179,
+          "U_rel_q90_minus_q10": 0.03644361073180962,
+          "U_rel_gap_over_median": 1.1214320195084897,
+          "W_rel90_q10": 0.7424222552372921,
+          "W_rel90_median": 1.6319618669174285,
+          "W_rel90_q90": 2.572556547415349,
+          "W_rel90_q90_minus_q10": 1.830134292178057,
+          "W_rel90_gap_over_median": 1.1214320195084897,
+          "current_error_association": {
+            "n_trajectories": 256,
+            "pearson": 0.7634866795107563,
+            "pearson_ci95": [
+              0.6916146561039023,
+              0.8279056400199348
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8224035820553902,
+            "spearman_ci95": [
+              0.7707135020114939,
+              0.8640770818615408
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.4,
+          "n_trajectories": 256,
+          "coverage90": 0.87890625,
+          "mean_E": 0.06110639407378294,
+          "median_E": 0.05624691438214474,
+          "mean_U_rel": 0.04241061087326409,
+          "median_U_rel": 0.041314388878274044,
+          "mean_U_rms": 0.011266498274255686,
+          "median_U_rms": 0.010000518062750588,
+          "mean_W_rel90": 2.079260823243716,
+          "median_W_rel90": 2.0255164559538366,
+          "U_rel_q10": 0.018612897604542926,
+          "U_rel_median": 0.041314388878274044,
+          "U_rel_q90": 0.0663471825695287,
+          "U_rel_q90_minus_q10": 0.04773428496498578,
+          "U_rel_gap_over_median": 1.1553912876607444,
+          "W_rel90_q10": 0.9125326893268193,
+          "W_rel90_median": 2.0255164559538366,
+          "W_rel90_q90": 3.2527967555493493,
+          "W_rel90_q90_minus_q10": 2.34026406622253,
+          "W_rel90_gap_over_median": 1.1553912876607442,
+          "current_error_association": {
+            "n_trajectories": 256,
+            "pearson": 0.7549934179840441,
+            "pearson_ci95": [
+              0.6763720687485616,
+              0.8229633374219623
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8161779011215381,
+            "spearman_ci95": [
+              0.7615090201517797,
+              0.8596259443202054
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.5,
+          "n_trajectories": 256,
+          "coverage90": 0.9140625,
+          "mean_E": 0.07345582137203634,
+          "median_E": 0.06729953918684933,
+          "mean_U_rel": 0.0512860611210246,
+          "median_U_rel": 0.04936318368932003,
+          "mean_U_rms": 0.013537074921090336,
+          "median_U_rms": 0.012055986730987466,
+          "mean_W_rel90": 2.7524317467900703,
+          "median_W_rel90": 2.649234332667734,
+          "U_rel_q10": 0.0225283355073516,
+          "U_rel_median": 0.04936318368932003,
+          "U_rel_q90": 0.0809192863297171,
+          "U_rel_q90_minus_q10": 0.05839095082236549,
+          "U_rel_gap_over_median": 1.1828846208515247,
+          "W_rel90_q10": 1.2090557258130439,
+          "W_rel90_median": 2.649234332667734,
+          "W_rel90_q90": 4.342794274957558,
+          "W_rel90_q90_minus_q10": 3.133738549144514,
+          "W_rel90_gap_over_median": 1.1828846208515245,
+          "current_error_association": {
+            "n_trajectories": 256,
+            "pearson": 0.7491225382921164,
+            "pearson_ci95": [
+              0.6675772488782166,
+              0.8203415914871063
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8104593442435339,
+            "spearman_ci95": [
+              0.7551280213319089,
+              0.8548069413553582
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.6,
+          "n_trajectories": 256,
+          "coverage90": 0.921875,
+          "mean_E": 0.08517231476983084,
+          "median_E": 0.07797869806822641,
+          "mean_U_rel": 0.05998954297779141,
+          "median_U_rel": 0.05732873120240606,
+          "mean_U_rms": 0.015723581799801878,
+          "median_U_rms": 0.013948636018105753,
+          "mean_W_rel90": 3.2142601863434965,
+          "median_W_rel90": 3.071692983320441,
+          "U_rel_q10": 0.026425365897142877,
+          "U_rel_median": 0.05732873120240606,
+          "U_rel_q90": 0.09417150641898067,
+          "U_rel_q90_minus_q10": 0.06774614052183779,
+          "U_rel_gap_over_median": 1.1817135858571821,
+          "W_rel90_q10": 1.41588012337734,
+          "W_rel90_median": 3.071692983320441,
+          "W_rel90_q90": 5.045741453349283,
+          "W_rel90_q90_minus_q10": 3.629861329971943,
+          "W_rel90_gap_over_median": 1.181713585857182,
+          "current_error_association": {
+            "n_trajectories": 256,
+            "pearson": 0.7452185921464106,
+            "pearson_ci95": [
+              0.6615005995157307,
+              0.817295743230302
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8056105516136416,
+            "spearman_ci95": [
+              0.7499098507659584,
+              0.8515602924756772
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.7,
+          "n_trajectories": 256,
+          "coverage90": 0.8984375,
+          "mean_E": 0.0963553109455908,
+          "median_E": 0.08771712759857682,
+          "mean_U_rel": 0.06857327032122247,
+          "median_U_rel": 0.06610059166711528,
+          "mean_U_rms": 0.017841376344060564,
+          "median_U_rms": 0.01572131010130305,
+          "mean_W_rel90": 3.2714301170768483,
+          "median_W_rel90": 3.1534658522691976,
+          "U_rel_q10": 0.030320656084101182,
+          "U_rel_median": 0.06610059166711528,
+          "U_rel_q90": 0.10697365035769862,
+          "U_rel_q90_minus_q10": 0.07665299427359744,
+          "U_rel_gap_over_median": 1.1596415756703722,
+          "W_rel90_q10": 1.446509799203196,
+          "W_rel90_median": 3.1534658522691976,
+          "W_rel90_q90": 5.103399908951363,
+          "W_rel90_q90_minus_q10": 3.6568901097481668,
+          "W_rel90_gap_over_median": 1.1596415756703726,
+          "current_error_association": {
+            "n_trajectories": 256,
+            "pearson": 0.7428177294864626,
+            "pearson_ci95": [
+              0.6566539539837258,
+              0.8166705349449492
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8026071469443808,
+            "spearman_ci95": [
+              0.7453702941175883,
+              0.849518092842038
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.8,
+          "n_trajectories": 256,
+          "coverage90": 0.8984375,
+          "mean_E": 0.10708107503243489,
+          "median_E": 0.09815685774455124,
+          "mean_U_rel": 0.07707248153415629,
+          "median_U_rel": 0.0742828669424574,
+          "mean_U_rms": 0.01990121265450802,
+          "median_U_rms": 0.017555088445692046,
+          "mean_W_rel90": 3.691146869643372,
+          "median_W_rel90": 3.5575469522318963,
+          "U_rel_q10": 0.034225400383847526,
+          "U_rel_median": 0.0742828669424574,
+          "U_rel_q90": 0.12017948822466251,
+          "U_rel_q90_minus_q10": 0.08595408784081499,
+          "U_rel_gap_over_median": 1.1571186113131389,
+          "W_rel90_q10": 1.6391191379136225,
+          "W_rel90_median": 3.5575469522318963,
+          "W_rel90_q90": 5.755622926961484,
+          "W_rel90_q90_minus_q10": 4.1165037890478615,
+          "W_rel90_gap_over_median": 1.1571186113131389,
+          "current_error_association": {
+            "n_trajectories": 256,
+            "pearson": 0.7415819905634637,
+            "pearson_ci95": [
+              0.6560701085642797,
+              0.8163443221673106
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7981302929732205,
+            "spearman_ci95": [
+              0.738862287039817,
+              0.8462000112354188
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.9,
+          "n_trajectories": 256,
+          "coverage90": 0.9140625,
+          "mean_E": 0.11741241152725504,
+          "median_E": 0.10736644921593833,
+          "mean_U_rel": 0.08551652952669195,
+          "median_U_rel": 0.08262697369576792,
+          "mean_U_rms": 0.021911949305227045,
+          "median_U_rms": 0.019237759005361697,
+          "mean_W_rel90": 4.074608003954221,
+          "median_W_rel90": 3.936929272348529,
+          "U_rel_q10": 0.03825714186149115,
+          "U_rel_median": 0.08262697369576792,
+          "U_rel_q90": 0.13394893695094046,
+          "U_rel_q90_minus_q10": 0.0956917950894493,
+          "U_rel_gap_over_median": 1.1581181157836664,
+          "W_rel90_q10": 1.8228388979301227,
+          "W_rel90_median": 3.936929272348529,
+          "W_rel90_q90": 6.382268008795963,
+          "W_rel90_q90_minus_q10": 4.559429110865841,
+          "W_rel90_gap_over_median": 1.1581181157836666,
+          "current_error_association": {
+            "n_trajectories": 256,
+            "pearson": 0.7412479566186946,
+            "pearson_ci95": [
+              0.6554160029562247,
+              0.8159178994016167
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7969901579308767,
+            "spearman_ci95": [
+              0.7384575437984688,
+              0.8461673983893551
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 1.0,
+          "n_trajectories": 256,
+          "coverage90": 0.90625,
+          "mean_E": 0.12740380665983442,
+          "median_E": 0.11660165465965766,
+          "mean_U_rel": 0.09393375781367301,
+          "median_U_rel": 0.09125760852421677,
+          "mean_U_rms": 0.023881745761694263,
+          "median_U_rms": 0.020863954048920684,
+          "mean_W_rel90": 4.678455042321042,
+          "median_W_rel90": 4.54516702714235,
+          "U_rel_q10": 0.04230086427399152,
+          "U_rel_median": 0.09125760852421677,
+          "U_rel_q90": 0.1465910106408762,
+          "U_rel_q90_minus_q10": 0.10429014636688469,
+          "U_rel_gap_over_median": 1.1428104248338866,
+          "W_rel90_q10": 2.106832478157143,
+          "W_rel90_median": 4.54516702714235,
+          "W_rel90_q90": 7.301096739386667,
+          "W_rel90_q90_minus_q10": 5.194264261229524,
+          "W_rel90_gap_over_median": 1.1428104248338868,
+          "current_error_association": {
+            "n_trajectories": 256,
+            "pearson": 0.7416046790225697,
+            "pearson_ci95": [
+              0.6538401954471237,
+              0.8166301729263554
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7942492561226825,
+            "spearman_ci95": [
+              0.7364083870953884,
+              0.8442883760971787
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        }
+      ],
+      "early_warning": [
+        {
+          "time": 0.1,
+          "target_time": 0.2,
+          "lag": 1,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7998784838667811,
+            "pearson_ci95": [
+              0.7482071706321267,
+              0.8492193347942745
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8460352769512475,
+            "spearman_ci95": [
+              0.7998037031139322,
+              0.8804158177431101
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9970266509832403,
+            "pearson_ci95": [
+              0.9960138593620288,
+              0.9979023541656143
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.996878576333257,
+            "spearman_ci95": [
+              0.9948448266428457,
+              0.997630987544516
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.14923563607929224,
+            "pearson_ci95": [
+              -0.03843818985361812,
+              0.30177648112024247
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.05434645329453577,
+            "spearman_ci95": [
+              -0.10815863347489912,
+              0.2189201147992543
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.7992944678160809,
+            "pearson_ci95": [
+              0.7483377864613243,
+              0.8452356545092059
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8436419947356374,
+            "spearman_ci95": [
+              0.7964829379605589,
+              0.8794530295820255
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.015552454350473435,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 2,
+            "non_event_count": 202,
+            "selected_count": 41,
+            "hits": 1,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              15,
+              198
+            ],
+            "missed_event_indices": [
+              15
+            ]
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7998784838667813,
+            "pearson_ci95": [
+              0.7482071706321266,
+              0.8492193347942746
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8460352769512475,
+            "spearman_ci95": [
+              0.7998037031139322,
+              0.8804158177431101
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.01883560601620989,
+            "pearson_ci95": [
+              -0.07028033703074495,
+              0.11652907645166113
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.04261595450197441,
+            "spearman_ci95": [
+              -0.05721654807008754,
+              0.14361483239711811
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 24,
+          "future_error_mean_given_noncoverage": 0.034898199777843926,
+          "future_error_mean_given_coverage": 0.03375073301906022
+        },
+        {
+          "time": 0.2,
+          "target_time": 0.3,
+          "lag": 1,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7798372311261073,
+            "pearson_ci95": [
+              0.7177640083383673,
+              0.8362809797556742
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.834580281528954,
+            "spearman_ci95": [
+              0.7855088927016295,
+              0.8731949436110332
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9984878320925977,
+            "pearson_ci95": [
+              0.9980236168509918,
+              0.9989438395113992
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9979221503776607,
+            "spearman_ci95": [
+              0.9962444972550613,
+              0.9984185263735822
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.1545760929886926,
+            "pearson_ci95": [
+              -0.03637960541545052,
+              0.31149792096463896
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.15314028688314713,
+            "spearman_ci95": [
+              -0.005168149465005851,
+              0.28613743721066265
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.7804422267955275,
+            "pearson_ci95": [
+              0.7180608354356187,
+              0.833768351773139
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8315339608606088,
+            "spearman_ci95": [
+              0.7823774827417596,
+              0.8708539797407406
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.014124307563829645,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 1,
+            "non_event_count": 203,
+            "selected_count": 41,
+            "hits": 1,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              114
+            ],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7798372311261073,
+            "pearson_ci95": [
+              0.7177640083383671,
+              0.8362809797556738
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.834580281528954,
+            "spearman_ci95": [
+              0.7855088927016295,
+              0.8731949436110332
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.051474890326331825,
+            "pearson_ci95": [
+              -0.06815896454469,
+              0.17923165460609305
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.04238216140815046,
+            "spearman_ci95": [
+              -0.07750502491027945,
+              0.16423275698881187
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 18,
+          "future_error_mean_given_noncoverage": 0.052719041811054884,
+          "future_error_mean_given_coverage": 0.04762439848248582
+        },
+        {
+          "time": 0.3,
+          "target_time": 0.4,
+          "lag": 1,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7663912793219236,
+            "pearson_ci95": [
+              0.6948561868958818,
+              0.8290392607276751
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8244234950789654,
+            "spearman_ci95": [
+              0.7730993160451055,
+              0.865291339375105
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9990282375496695,
+            "pearson_ci95": [
+              0.9987295614412881,
+              0.9993187868027872
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.998671749828336,
+            "spearman_ci95": [
+              0.9975505345086765,
+              0.9989041747223402
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.12810794868853675,
+            "pearson_ci95": [
+              -0.0686743366390336,
+              0.2953559921310139
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.10617623195834844,
+            "spearman_ci95": [
+              -0.046777741827855074,
+              0.24301087843972977
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.7646205235217809,
+            "pearson_ci95": [
+              0.6913050967158956,
+              0.8249971514400276
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8173073071641108,
+            "spearman_ci95": [
+              0.7654477571132499,
+              0.8597721050465206
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.013123778482257096,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 3,
+            "non_event_count": 201,
+            "selected_count": 41,
+            "hits": 3,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              36,
+              200,
+              253
+            ],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7663912793219236,
+            "pearson_ci95": [
+              0.6948561868958819,
+              0.8290392607276751
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8244234950789654,
+            "spearman_ci95": [
+              0.7730993160451055,
+              0.865291339375105
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.06809480510075006,
+            "pearson_ci95": [
+              -0.03571800168123922,
+              0.18295956250602124
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.08075236831972403,
+            "spearman_ci95": [
+              -0.021286201741326425,
+              0.17821869771786683
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 25,
+          "future_error_mean_given_noncoverage": 0.06779657303649367,
+          "future_error_mean_given_coverage": 0.060382348731498225
+        },
+        {
+          "time": 0.4,
+          "target_time": 0.5,
+          "lag": 1,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7570563800018282,
+            "pearson_ci95": [
+              0.6795196081370442,
+              0.8244164892555558
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8177243076218814,
+            "spearman_ci95": [
+              0.7643673939535626,
+              0.860531094789116
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.999289720611782,
+            "pearson_ci95": [
+              0.999056151639767,
+              0.9995037373092976
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9989564259555962,
+            "spearman_ci95": [
+              0.9979913988752184,
+              0.9991939056947622
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.10518738499085577,
+            "pearson_ci95": [
+              -0.08983082088032658,
+              0.2811265866021161
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.09087297239887705,
+            "spearman_ci95": [
+              -0.06387690110537987,
+              0.23177935977655062
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.7517897136402866,
+            "pearson_ci95": [
+              0.6732437370476445,
+              0.8166919119743082
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.805742875944152,
+            "spearman_ci95": [
+              0.7517633912556173,
+              0.8501558730954789
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.012349427298253403,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 2,
+            "non_event_count": 202,
+            "selected_count": 41,
+            "hits": 1,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              171,
+              185
+            ],
+            "missed_event_indices": [
+              185
+            ]
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7570563800018282,
+            "pearson_ci95": [
+              0.679519608137044,
+              0.8244164892555559
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8177243076218814,
+            "spearman_ci95": [
+              0.7643673939535626,
+              0.860531094789116
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.11553993178232946,
+            "pearson_ci95": [
+              0.00902589101472318,
+              0.23003266020152852
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.14217688349735477,
+            "spearman_ci95": [
+              0.03314399018127809,
+              0.24344330839607423
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 31,
+          "future_error_mean_given_noncoverage": 0.08555900813637654,
+          "future_error_mean_given_coverage": 0.07178827119561614
+        },
+        {
+          "time": 0.5,
+          "target_time": 0.6,
+          "lag": 1,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7507117847427763,
+            "pearson_ci95": [
+              0.6701072163835224,
+              0.8206416162947172
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8110265506981003,
+            "spearman_ci95": [
+              0.757859240916742,
+              0.8551955165531081
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9994328317109298,
+            "pearson_ci95": [
+              0.9992365612000808,
+              0.9996042316222988
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9992260814831769,
+            "spearman_ci95": [
+              0.9984411861038418,
+              0.9994170199366368
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.09028926098307123,
+            "pearson_ci95": [
+              -0.09985095018916584,
+              0.2648256802714237
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.05183686335487902,
+            "spearman_ci95": [
+              -0.08823588870276032,
+              0.18401908450924917
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.7415862004807658,
+            "pearson_ci95": [
+              0.6595706462721517,
+              0.8089339409725166
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7946884298466468,
+            "spearman_ci95": [
+              0.7378021852273108,
+              0.8403757802110815
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.011716493397794505,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 1,
+            "non_event_count": 203,
+            "selected_count": 41,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              118
+            ],
+            "missed_event_indices": [
+              118
+            ]
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7507117847427762,
+            "pearson_ci95": [
+              0.6701072163835224,
+              0.820641616294717
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8110265506981003,
+            "spearman_ci95": [
+              0.757859240916742,
+              0.8551955165531081
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.1344829655130044,
+            "pearson_ci95": [
+              0.026087400394203035,
+              0.25304786656770883
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.14352229117766857,
+            "spearman_ci95": [
+              0.037335513870205776,
+              0.24327522186352035
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 22,
+          "future_error_mean_given_noncoverage": 0.10492874717891092,
+          "future_error_mean_given_coverage": 0.08331487240658401
+        },
+        {
+          "time": 0.6,
+          "target_time": 0.7,
+          "lag": 1,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7465511904746381,
+            "pearson_ci95": [
+              0.6634624029834414,
+              0.8181760108854305
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8061548695353628,
+            "spearman_ci95": [
+              0.7504437623271653,
+              0.8520357083289449
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9995172158099896,
+            "pearson_ci95": [
+              0.9993484890186872,
+              0.9996612294905755
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9992725738155184,
+            "spearman_ci95": [
+              0.9985063636071569,
+              0.9994149087427013
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.08168635484285931,
+            "pearson_ci95": [
+              -0.10378137005766996,
+              0.2515542172699458
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.050029975730018106,
+            "spearman_ci95": [
+              -0.09576219435460583,
+              0.18792802738776365
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.7332362583555462,
+            "pearson_ci95": [
+              0.6489894982421142,
+              0.8030092189678651
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7844958800640879,
+            "spearman_ci95": [
+              0.7262828832612138,
+              0.8321072390024369
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.011182996175759958,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 1,
+            "non_event_count": 203,
+            "selected_count": 41,
+            "hits": 1,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              171
+            ],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7465511904746382,
+            "pearson_ci95": [
+              0.6634624029834413,
+              0.8181760108854306
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8061548695353628,
+            "spearman_ci95": [
+              0.7504437623271653,
+              0.8520357083289449
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.14437517510934925,
+            "pearson_ci95": [
+              0.02843782272252571,
+              0.26863811866978515
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.14653990557856228,
+            "spearman_ci95": [
+              0.03774686827127065,
+              0.25232647396217195
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 20,
+          "future_error_mean_given_noncoverage": 0.12157606593592374,
+          "future_error_mean_given_coverage": 0.09421795882776597
+        },
+        {
+          "time": 0.7,
+          "target_time": 0.8,
+          "lag": 1,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7440057080139355,
+            "pearson_ci95": [
+              0.6595644386526152,
+              0.8172679821470841
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8026193064774548,
+            "spearman_ci95": [
+              0.7461263949029415,
+              0.8490653790220097
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9995691562172658,
+            "pearson_ci95": [
+              0.9994179699240676,
+              0.9996987557019745
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9993755722133211,
+            "spearman_ci95": [
+              0.9987253030140957,
+              0.9994764492188785
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.07674173069348057,
+            "pearson_ci95": [
+              -0.10399747575656407,
+              0.24049062060021803
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.024355209307255845,
+            "spearman_ci95": [
+              -0.10837733319340445,
+              0.16114725506661998
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.7259252723071311,
+            "pearson_ci95": [
+              0.6409380964838199,
+              0.7971994907965911
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7769226367589838,
+            "spearman_ci95": [
+              0.7167565213293821,
+              0.8267502642431874
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.010725764086844093,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 1,
+            "non_event_count": 203,
+            "selected_count": 41,
+            "hits": 1,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              225
+            ],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7440057080139356,
+            "pearson_ci95": [
+              0.6595644386526153,
+              0.8172679821470841
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8026193064774548,
+            "spearman_ci95": [
+              0.7461263949029415,
+              0.8490653790220097
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.14689360920632918,
+            "pearson_ci95": [
+              0.02874900982673935,
+              0.26412262387352536
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.15503762292007459,
+            "spearman_ci95": [
+              0.04690412992239495,
+              0.253811798435395
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 26,
+          "future_error_mean_given_noncoverage": 0.13170113045134707,
+          "future_error_mean_given_coverage": 0.10429793833290568
+        },
+        {
+          "time": 0.8,
+          "target_time": 0.9,
+          "lag": 1,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7426806156416764,
+            "pearson_ci95": [
+              0.6576228151916399,
+              0.8167550020433615
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7992561226825361,
+            "spearman_ci95": [
+              0.7414622974939564,
+              0.8472388571348931
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9996013909960214,
+            "pearson_ci95": [
+              0.9994600683275179,
+              0.9997197434464933
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9993734264133669,
+            "spearman_ci95": [
+              0.9987317109182715,
+              0.9994749733712004
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.07361302487574362,
+            "pearson_ci95": [
+              -0.10055792597500779,
+              0.23300982821396887
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.0762463811791134,
+            "spearman_ci95": [
+              -0.08506989224041744,
+              0.23284687440704752
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.718986444598313,
+            "pearson_ci95": [
+              0.6351820599566854,
+              0.7904485702180578
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7660105287251088,
+            "spearman_ci95": [
+              0.7057877057448546,
+              0.8165666289732906
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.010331336494820133,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 1,
+            "non_event_count": 203,
+            "selected_count": 41,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              112
+            ],
+            "missed_event_indices": [
+              112
+            ]
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7426806156416765,
+            "pearson_ci95": [
+              0.6576228151916397,
+              0.8167550020433614
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7992561226825361,
+            "spearman_ci95": [
+              0.7414622974939564,
+              0.8472388571348931
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.16645488848414833,
+            "pearson_ci95": [
+              0.05304081233137725,
+              0.27861116611087705
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.18776001060185105,
+            "spearman_ci95": [
+              0.08928959324243632,
+              0.28111932798020633
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 26,
+          "future_error_mean_given_noncoverage": 0.1478980588961333,
+          "future_error_mean_given_coverage": 0.1139662079116427
+        },
+        {
+          "time": 0.9,
+          "target_time": 1.0,
+          "lag": 1,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7422831441279762,
+            "pearson_ci95": [
+              0.655714857342762,
+              0.8160156705988422
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7968077649347677,
+            "spearman_ci95": [
+              0.7387818640160414,
+              0.8455117700201933
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.999620826669562,
+            "pearson_ci95": [
+              0.9994858041184751,
+              0.9997344345234273
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.999345531013962,
+            "spearman_ci95": [
+              0.9986822781116832,
+              0.9995035894358449
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.07121526942472489,
+            "pearson_ci95": [
+              -0.09486867825946864,
+              0.2264986066476106
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.01552572140620514,
+            "spearman_ci95": [
+              -0.13250236634846102,
+              0.15964079236059325
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.711917278945779,
+            "pearson_ci95": [
+              0.630023718050592,
+              0.7828193805987502
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7566398203250172,
+            "spearman_ci95": [
+              0.6951165535506351,
+              0.8085737751128971
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.009991395132579387,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 0,
+            "non_event_count": 204,
+            "selected_count": 41,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7422831441279761,
+            "pearson_ci95": [
+              0.655714857342762,
+              0.8160156705988421
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7968077649347677,
+            "spearman_ci95": [
+              0.7387818640160414,
+              0.8455117700201933
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.19044294742138465,
+            "pearson_ci95": [
+              0.07340296843939016,
+              0.3135524964002656
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.19576365077847563,
+            "spearman_ci95": [
+              0.09331526808438526,
+              0.29129046594014946
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 22,
+          "future_error_mean_given_noncoverage": 0.16874841533486917,
+          "future_error_mean_given_coverage": 0.12351670669893373
+        },
+        {
+          "time": 0.1,
+          "target_time": 0.3,
+          "lag": 2,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.8006224791205862,
+            "pearson_ci95": [
+              0.7493961546576932,
+              0.84799945412438
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8464365415426871,
+            "spearman_ci95": [
+              0.8000896351686346,
+              0.8808059744652068
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9913860186228917,
+            "pearson_ci95": [
+              0.98866509358602,
+              0.9939528142415349
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9907651922636759,
+            "spearman_ci95": [
+              0.985685404137972,
+              0.9931652902722684
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.15366747484425786,
+            "pearson_ci95": [
+              -0.03562847756206181,
+              0.3041339958413594
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.10885891411974959,
+            "spearman_ci95": [
+              -0.04953941717297844,
+              0.26323912069711364
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.7972268107717105,
+            "pearson_ci95": [
+              0.7453959085719605,
+              0.8426089372995512
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8412701705195696,
+            "spearman_ci95": [
+              0.7927893523578197,
+              0.8778044819838432
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.02967676191430308,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 3,
+            "non_event_count": 201,
+            "selected_count": 41,
+            "hits": 2,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              15,
+              114,
+              198
+            ],
+            "missed_event_indices": [
+              15
+            ]
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.8006224791205862,
+            "pearson_ci95": [
+              0.7493961546576935,
+              0.8479994541243798
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8464365415426871,
+            "spearman_ci95": [
+              0.8000896351686346,
+              0.8808059744652068
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.017496293732705774,
+            "pearson_ci95": [
+              -0.07243563892844673,
+              0.11703334749768256
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.04025847616782263,
+            "spearman_ci95": [
+              -0.06089870032974249,
+              0.14046878307234348
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 24,
+          "future_error_mean_given_noncoverage": 0.049359151526747504,
+          "future_error_mean_given_coverage": 0.04784021532236498
+        },
+        {
+          "time": 0.2,
+          "target_time": 0.4,
+          "lag": 2,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7811547808463118,
+            "pearson_ci95": [
+              0.7185999664285845,
+              0.8371419606505315
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.835269798580911,
+            "spearman_ci95": [
+              0.7866718905921116,
+              0.8737841090662063
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9951263794665168,
+            "pearson_ci95": [
+              0.9936334132404928,
+              0.9965950070259519
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9941684309910734,
+            "spearman_ci95": [
+              0.9907301435412345,
+              0.9955301934136349
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.14923711229446276,
+            "pearson_ci95": [
+              -0.045209176753672926,
+              0.3089881914038526
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.1549491931252311,
+            "spearman_ci95": [
+              0.0023105087256809773,
+              0.2930744182751465
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.7776819500281482,
+            "pearson_ci95": [
+              0.7136087056011429,
+              0.8317400652982399
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.828558451590753,
+            "spearman_ci95": [
+              0.7791800390804571,
+              0.8679812076443573
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.027248086046086743,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 3,
+            "non_event_count": 201,
+            "selected_count": 41,
+            "hits": 3,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              36,
+              114,
+              200
+            ],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7811547808463116,
+            "pearson_ci95": [
+              0.7185999664285843,
+              0.8371419606505316
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.835269798580911,
+            "spearman_ci95": [
+              0.7866718905921116,
+              0.8737841090662063
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.05230619059737638,
+            "pearson_ci95": [
+              -0.0698976461787197,
+              0.1804031674910085
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.04258890365892193,
+            "spearman_ci95": [
+              -0.07550310476622224,
+              0.16292459117252261
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 18,
+          "future_error_mean_given_noncoverage": 0.06725381691571947,
+          "future_error_mean_given_coverage": 0.06064146293447681
+        },
+        {
+          "time": 0.3,
+          "target_time": 0.5,
+          "lag": 2,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7675028621707133,
+            "pearson_ci95": [
+              0.6965573463872554,
+              0.8294355765954818
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8250600823987182,
+            "spearman_ci95": [
+              0.7743780746334579,
+              0.8664164468449124
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9966729460887099,
+            "pearson_ci95": [
+              0.9956252715275815,
+              0.9976736305726775
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9959151121538109,
+            "spearman_ci95": [
+              0.9933167920265896,
+              0.9968869473171377
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.12455594242868546,
+            "pearson_ci95": [
+              -0.070579985269999,
+              0.29561963603523894
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.11711217749040553,
+            "spearman_ci95": [
+              -0.03761294751249063,
+              0.25268800501522903
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.7615828143021792,
+            "pearson_ci95": [
+              0.6881990952836982,
+              0.8220252321592765
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8137488555733577,
+            "spearman_ci95": [
+              0.7604379376405876,
+              0.8566621523399887
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.025473205780510495,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 4,
+            "non_event_count": 200,
+            "selected_count": 41,
+            "hits": 3,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              36,
+              171,
+              185,
+              200
+            ],
+            "missed_event_indices": [
+              185
+            ]
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7675028621707134,
+            "pearson_ci95": [
+              0.6965573463872554,
+              0.8294355765954821
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8250600823987182,
+            "spearman_ci95": [
+              0.7743780746334579,
+              0.8664164468449124
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.06243037412302664,
+            "pearson_ci95": [
+              -0.04307768395804818,
+              0.17734909503256566
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.07131493607949167,
+            "spearman_ci95": [
+              -0.0314659437911669,
+              0.1706864525221371
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 25,
+          "future_error_mean_given_noncoverage": 0.08083467914007951,
+          "future_error_mean_given_coverage": 0.07265724369151216
+        },
+        {
+          "time": 0.4,
+          "target_time": 0.6,
+          "lag": 2,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7579896098485566,
+            "pearson_ci95": [
+              0.6808482648006791,
+              0.8245407100738007
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.817813000686656,
+            "spearman_ci95": [
+              0.766043876851766,
+              0.8603637289447584
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9974629928231452,
+            "pearson_ci95": [
+              0.996623594154416,
+              0.9982250520571877
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.99692578393225,
+            "spearman_ci95": [
+              0.9945140118853624,
+              0.9977655064917421
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.10521981358523032,
+            "pearson_ci95": [
+              -0.08924177724526387,
+              0.28034703295490043
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.09154090614473649,
+            "spearman_ci95": [
+              -0.05796531366925563,
+              0.2250064456195019
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.7487088838892478,
+            "pearson_ci95": [
+              0.6693865339921764,
+              0.8132010363388636
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8033796349279011,
+            "spearman_ci95": [
+              0.7491728019212069,
+              0.8481448788700783
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.02406592069604791,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 2,
+            "non_event_count": 202,
+            "selected_count": 41,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              118,
+              185
+            ],
+            "missed_event_indices": [
+              118,
+              185
+            ]
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7579896098485565,
+            "pearson_ci95": [
+              0.6808482648006788,
+              0.8245407100738008
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.817813000686656,
+            "spearman_ci95": [
+              0.766043876851766,
+              0.8603637289447584
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.11077721613287052,
+            "pearson_ci95": [
+              0.002647901981592997,
+              0.22432836495137864
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.13375158669751153,
+            "spearman_ci95": [
+              0.025799000371056778,
+              0.23599984815892705
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 31,
+          "future_error_mean_given_noncoverage": 0.09861560319714663,
+          "future_error_mean_given_coverage": 0.08332012836428955
+        },
+        {
+          "time": 0.5,
+          "target_time": 0.7,
+          "lag": 2,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7515486994583257,
+            "pearson_ci95": [
+              0.6712034254161587,
+              0.8210853065475017
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8111831940947585,
+            "spearman_ci95": [
+              0.7578566455795501,
+              0.8557781530070304
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9979101275002115,
+            "pearson_ci95": [
+              0.9971836150402844,
+              0.9985405126825903
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9975401979858091,
+            "spearman_ci95": [
+              0.9956931032502073,
+              0.9981416891725892
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.09325508838243074,
+            "pearson_ci95": [
+              -0.09462196476363326,
+              0.26555133398829833
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.06617794089730568,
+            "spearman_ci95": [
+              -0.0745005537637396,
+              0.19764792749363613
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.738434223900301,
+            "pearson_ci95": [
+              0.6552928526589726,
+              0.8059462670257188
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7905699244678416,
+            "spearman_ci95": [
+              0.733361570818536,
+              0.8375394718912208
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.022899489573554463,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 1,
+            "non_event_count": 203,
+            "selected_count": 41,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              118
+            ],
+            "missed_event_indices": [
+              118
+            ]
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7515486994583256,
+            "pearson_ci95": [
+              0.6712034254161587,
+              0.8210853065475014
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8111831940947585,
+            "spearman_ci95": [
+              0.7578566455795501,
+              0.8557781530070304
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.1321065722318125,
+            "pearson_ci95": [
+              0.022968559024724226,
+              0.25172980522817484
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.13880736702597116,
+            "spearman_ci95": [
+              0.03182787477462175,
+              0.23921752146549158
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 22,
+          "future_error_mean_given_noncoverage": 0.11826547189706428,
+          "future_error_mean_given_coverage": 0.09429538128348645
+        },
+        {
+          "time": 0.6,
+          "target_time": 0.8,
+          "lag": 2,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7473401713023321,
+            "pearson_ci95": [
+              0.6655679012613406,
+              0.8188295924792007
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8057707713435569,
+            "spearman_ci95": [
+              0.7500231876539746,
+              0.8513107447646034
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9981791657862246,
+            "pearson_ci95": [
+              0.9975479467568407,
+              0.9987266972704505
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9977705138475623,
+            "spearman_ci95": [
+              0.996132308275636,
+              0.9982618389932045
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.08648297944414586,
+            "pearson_ci95": [
+              -0.09883736415144564,
+              0.25385564581184805
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.049478408345385444,
+            "spearman_ci95": [
+              -0.0855308567564032,
+              0.18654830396718058
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.729867130436525,
+            "pearson_ci95": [
+              0.6453324706139488,
+              0.7993751579004023
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7805747882810712,
+            "spearman_ci95": [
+              0.722788874780887,
+              0.8291275040958321
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.02190876026260405,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 2,
+            "non_event_count": 202,
+            "selected_count": 41,
+            "hits": 2,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              171,
+              225
+            ],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7473401713023322,
+            "pearson_ci95": [
+              0.6655679012613406,
+              0.8188295924792007
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8057707713435569,
+            "spearman_ci95": [
+              0.7500231876539746,
+              0.8513107447646034
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.144846910782506,
+            "pearson_ci95": [
+              0.027753603866136754,
+              0.2709471347728043
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.1416158496115407,
+            "spearman_ci95": [
+              0.03121083960795681,
+              0.2476482462763893
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 20,
+          "future_error_mean_given_noncoverage": 0.13511985557044565,
+          "future_error_mean_given_coverage": 0.10470490719023058
+        },
+        {
+          "time": 0.7,
+          "target_time": 0.9,
+          "lag": 2,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7447664995231921,
+            "pearson_ci95": [
+              0.660898512142653,
+              0.8176508911062619
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8033524547951476,
+            "spearman_ci95": [
+              0.7468284242346953,
+              0.849979876056762
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9983456820534481,
+            "pearson_ci95": [
+              0.9977626969550975,
+              0.998841608133388
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9978212977798123,
+            "spearman_ci95": [
+              0.9961079865718026,
+              0.9983341248062487
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.08254895591091589,
+            "pearson_ci95": [
+              -0.09452676778667345,
+              0.24418360574339038
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.0633715307711186,
+            "spearman_ci95": [
+              -0.0757335717471909,
+              0.2068415095562894
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.7221758923700121,
+            "pearson_ci95": [
+              0.6382931044787935,
+              0.7935939381850338
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7723163195239185,
+            "spearman_ci95": [
+              0.7117490030015579,
+              0.8222195153455152
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.021057100581664226,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 2,
+            "non_event_count": 202,
+            "selected_count": 41,
+            "hits": 1,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              112,
+              225
+            ],
+            "missed_event_indices": [
+              112
+            ]
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7447664995231922,
+            "pearson_ci95": [
+              0.6608985121426533,
+              0.817650891106262
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8033524547951476,
+            "spearman_ci95": [
+              0.7468284242346953,
+              0.849979876056762
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.14580547290014698,
+            "pearson_ci95": [
+              0.026564518428738516,
+              0.26337024502387213
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.15311277658585246,
+            "spearman_ci95": [
+              0.043995167571268874,
+              0.253429346252702
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 26,
+          "future_error_mean_given_noncoverage": 0.14411618857919614,
+          "future_error_mean_given_coverage": 0.11439372368660082
+        },
+        {
+          "time": 0.8,
+          "target_time": 1.0,
+          "lag": 2,
+          "n_trajectories": 256,
+          "uncertainty_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7434177474677272,
+            "pearson_ci95": [
+              0.6588662235046658,
+              0.8163674763395493
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7988276779583429,
+            "spearman_ci95": [
+              0.7421111507854645,
+              0.8464379370926145
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 256,
+            "pearson": 0.9984479607715712,
+            "pearson_ci95": [
+              0.997896754241785,
+              0.9989108096818372
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9978055619134814,
+            "spearman_ci95": [
+              0.9961390812466149,
+              0.9983606781055654
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 256,
+            "pearson": 0.07993989458876014,
+            "pearson_ci95": [
+              -0.0908952187846647,
+              0.23805189169006147
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.06138675123069341,
+            "spearman_ci95": [
+              -0.08803100708899107,
+              0.20787432086173072
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 256,
+            "pearson": 0.7147205530052488,
+            "pearson_ci95": [
+              0.6315823426819871,
+              0.785699421998928
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7611803330281529,
+            "spearman_ci95": [
+              0.7000839106696559,
+              0.8117956045279588
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.020322731627399518,
+          "new_failure": {
+            "eligible_count": 204,
+            "excluded_already_high_count": 52,
+            "event_count": 1,
+            "non_event_count": 203,
+            "selected_count": 41,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              112
+            ],
+            "missed_event_indices": [
+              112
+            ]
+          },
+          "width_future": {
+            "n_trajectories": 256,
+            "pearson": 0.7434177474677272,
+            "pearson_ci95": [
+              0.6588662235046656,
+              0.8163674763395493
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7988276779583429,
+            "spearman_ci95": [
+              0.7421111507854645,
+              0.8464379370926145
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 256,
+            "pearson": 0.1641587301180806,
+            "pearson_ci95": [
+              0.04794982916777397,
+              0.27707791450345903
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.18233544365995227,
+            "spearman_ci95": [
+              0.08269446277875966,
+              0.2761936187694285
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 26,
+          "future_error_mean_given_noncoverage": 0.1599049493989183,
+          "future_error_mean_given_coverage": 0.12372976443715537
+        }
+      ],
+      "growth_by_horizon": [
+        {
+          "time": 0.1,
+          "target_time": 0.2,
+          "n_trajectories": 256,
+          "pearson": 0.7448293937458916,
+          "pearson_ci95": [
+            0.6655053564648189,
+            0.8140010596138445
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.8084973678187228,
+          "spearman_ci95": [
+            0.7540000402440424,
+            0.8540124697641488
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.2,
+          "target_time": 0.3,
+          "n_trajectories": 256,
+          "pearson": 0.7281008653020842,
+          "pearson_ci95": [
+            0.6387672164526341,
+            0.8049800582590594
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7892845902952621,
+          "spearman_ci95": [
+            0.7293158172185773,
+            0.8394427440338914
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.3,
+          "target_time": 0.4,
+          "n_trajectories": 256,
+          "pearson": 0.7193572935897888,
+          "pearson_ci95": [
+            0.6253839789167106,
+            0.7992718587450952
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7759663252460517,
+          "spearman_ci95": [
+            0.7102975300117523,
+            0.8299644970993617
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.4,
+          "target_time": 0.5,
+          "n_trajectories": 256,
+          "pearson": 0.7160739966877032,
+          "pearson_ci95": [
+            0.6224027715373314,
+            0.7971511040209402
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7710510128175784,
+          "spearman_ci95": [
+            0.7053849569388423,
+            0.8251734379350714
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.5,
+          "target_time": 0.6,
+          "n_trajectories": 256,
+          "pearson": 0.7156674845161627,
+          "pearson_ci95": [
+            0.6216274248284718,
+            0.7964471331161861
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7669353685053788,
+          "spearman_ci95": [
+            0.7030153308760282,
+            0.8218933428745709
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.6,
+          "target_time": 0.7,
+          "n_trajectories": 256,
+          "pearson": 0.7164051571611247,
+          "pearson_ci95": [
+            0.6232358613047273,
+            0.7963445101604374
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7643868734264133,
+          "spearman_ci95": [
+            0.700387250078435,
+            0.8186921552101774
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.7,
+          "target_time": 0.8,
+          "n_trajectories": 256,
+          "pearson": 0.7169569983573489,
+          "pearson_ci95": [
+            0.6250749252410596,
+            0.7959746863714571
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7643081940947585,
+          "spearman_ci95": [
+            0.7011894150901261,
+            0.8177565097451984
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.8,
+          "target_time": 0.9,
+          "n_trajectories": 256,
+          "pearson": 0.7163309701960069,
+          "pearson_ci95": [
+            0.6280433246086755,
+            0.7940325553626059
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7642960345616846,
+          "spearman_ci95": [
+            0.701202175832036,
+            0.8146192243955677
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.9,
+          "target_time": 1.0,
+          "n_trajectories": 256,
+          "pearson": 0.7142424950873286,
+          "pearson_ci95": [
+            0.6273204003893864,
+            0.7903584889353993
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7615844586861982,
+          "spearman_ci95": [
+            0.6996064888189651,
+            0.8116575060043185
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        }
+      ],
+      "pooled_growth_secondary_source_horizon_confounded": {
+        "n_trajectories": 256,
+        "pearson": 0.7234924151768417,
+        "pearson_ci95": [
+          0.6425831630094111,
+          0.7954724999516721
+        ],
+        "pearson_invalid_bootstraps": 0,
+        "spearman": 0.7811182800876848,
+        "spearman_ci95": [
+          0.7272256039355977,
+          0.8280945336297614
+        ],
+        "spearman_invalid_bootstraps": 0,
+        "status": "ok"
+      },
+      "examples": [
+        {
+          "rule": "predetermined",
+          "trajectory_id": 0,
+          "final_error": 0.03300804622582745,
+          "final_U_rel": 0.04187545824878013,
+          "final_W_rel90": 2.0856447495917454,
+          "error_increase_0_5_to_1": 0.015862623428009606
+        },
+        {
+          "rule": "largest_final_error",
+          "trajectory_id": 172,
+          "final_error": 0.41290457299254707,
+          "final_U_rel": 0.0840756752783534,
+          "final_W_rel90": 4.187464401485957,
+          "error_increase_0_5_to_1": 0.1796971190843938
+        },
+        {
+          "rule": "largest_final_U_rel",
+          "trajectory_id": 158,
+          "final_error": 0.3671985404455038,
+          "final_U_rel": 0.2300649991288244,
+          "final_W_rel90": 11.458593590718257,
+          "error_increase_0_5_to_1": 0.14571532568296683
+        },
+        {
+          "rule": "largest_error_increase_0.5_to_1.0",
+          "trajectory_id": 172,
+          "final_error": 0.41290457299254707,
+          "final_U_rel": 0.0840756752783534,
+          "final_W_rel90": 4.187464401485957,
+          "error_increase_0_5_to_1": 0.1796971190843938
+        },
+        {
+          "rule": "first_missed_new_failure",
+          "trajectory_id": 15,
+          "source_time": 0.1,
+          "target_time": 0.2,
+          "lag": 1,
+          "event_count_in_comparison": 2,
+          "comparison_status": "unstable/undefined: require >= 5 events and non-events",
+          "final_error": 0.21806892956512933,
+          "final_U_rel": 0.1136967003209999,
+          "final_W_rel90": 5.662766116172767,
+          "error_increase_0_5_to_1": 0.10025838426409728
+        }
+      ],
+      "origin": {
+        "archive": "data/stage8/audit.npz",
+        "archive_sha256": "959055fc071134c7bc67098d63303611cb5bd0c29f54b013b901d481f87bd210",
+        "prediction_manifest": "runs/stage8/calibration/audit_predictions/manifest.json",
+        "prediction_manifest_sha256": "19eca03eb8dce0ec6baefa76fb58262397ca13c31818779a4709c54aaf1a11b3",
+        "members_and_spread": "retained in original verified audit_predictions arrays",
+        "role": "primary retrospective; previously used for Stage 8C coverage"
+      },
+      "analysis_arrays_sha256": "1f23efa17bdef2a43c30fa2b6a5232b0ccbf69b7265f65aaff30a3a79f1526ae"
+    },
+    "fresh_id": {
+      "by_horizon": [
+        {
+          "time": 0.1,
+          "n_trajectories": 64,
+          "coverage90": 0.953125,
+          "mean_E": 0.020940572126751093,
+          "median_E": 0.019251936659553923,
+          "mean_U_rel": 0.014614118328586403,
+          "median_U_rel": 0.01497083079394632,
+          "mean_U_rms": 0.003635253429355108,
+          "median_U_rms": 0.003021581364158939,
+          "mean_W_rel90": 0.7545535524740122,
+          "median_W_rel90": 0.7729712668990141,
+          "U_rel_q10": 0.007468578104021965,
+          "U_rel_median": 0.01497083079394632,
+          "U_rel_q90": 0.02204612577206638,
+          "U_rel_q90_minus_q10": 0.014577547668044415,
+          "U_rel_gap_over_median": 0.9737300400148177,
+          "W_rel90_q10": 0.38561629334121467,
+          "W_rel90_median": 0.7729712668990141,
+          "W_rel90_q90": 1.1382816359890962,
+          "W_rel90_q90_minus_q10": 0.7526653426478815,
+          "W_rel90_gap_over_median": 0.973730040014818,
+          "current_error_association": {
+            "n_trajectories": 64,
+            "pearson": 0.7756133997351143,
+            "pearson_ci95": [
+              0.6944392244351555,
+              0.8646629782710565
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8461080586080585,
+            "spearman_ci95": [
+              0.7440899078124105,
+              0.905460191185984
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.2,
+          "n_trajectories": 64,
+          "coverage90": 0.96875,
+          "mean_E": 0.038600442473791685,
+          "median_E": 0.03406589829364458,
+          "mean_U_rel": 0.02587656982684761,
+          "median_U_rel": 0.026121655591125073,
+          "mean_U_rms": 0.006457373114899618,
+          "median_U_rms": 0.005300376791483671,
+          "mean_W_rel90": 1.3779013531656967,
+          "median_W_rel90": 1.3909519239522927,
+          "U_rel_q10": 0.013037562972805797,
+          "U_rel_median": 0.026121655591125073,
+          "U_rel_q90": 0.03911237378386365,
+          "U_rel_q90_minus_q10": 0.026074810811057857,
+          "U_rel_gap_over_median": 0.9982066687961718,
+          "W_rel90_q10": 0.6942371335312568,
+          "W_rel90_median": 1.3909519239522927,
+          "W_rel90_q90": 2.082694619995301,
+          "W_rel90_q90_minus_q10": 1.388457486464044,
+          "W_rel90_gap_over_median": 0.9982066687961716,
+          "current_error_association": {
+            "n_trajectories": 64,
+            "pearson": 0.7384170413570054,
+            "pearson_ci95": [
+              0.6343149283491764,
+              0.8460539864498311
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8293956043956042,
+            "spearman_ci95": [
+              0.7027532265608978,
+              0.9001662805060449
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.3,
+          "n_trajectories": 64,
+          "coverage90": 0.9375,
+          "mean_E": 0.054530628417558236,
+          "median_E": 0.04776133276614522,
+          "mean_U_rel": 0.0360961301019936,
+          "median_U_rel": 0.03684847774001217,
+          "mean_U_rms": 0.008996125267150969,
+          "median_U_rms": 0.007207475208116298,
+          "mean_W_rel90": 1.8126844236352877,
+          "median_W_rel90": 1.850466004118891,
+          "U_rel_q10": 0.018152335567313372,
+          "U_rel_median": 0.03684847774001217,
+          "U_rel_q90": 0.05506914840100649,
+          "U_rel_q90_minus_q10": 0.03691681283369312,
+          "U_rel_gap_over_median": 1.0018544889198164,
+          "W_rel90_q10": 0.9115784944949668,
+          "W_rel90_median": 1.850466004118891,
+          "W_rel90_q90": 2.7654761673149926,
+          "W_rel90_q90_minus_q10": 1.8538976728200258,
+          "W_rel90_gap_over_median": 1.0018544889198162,
+          "current_error_association": {
+            "n_trajectories": 64,
+            "pearson": 0.7195301127495858,
+            "pearson_ci95": [
+              0.5972218603091282,
+              0.837204413281095
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8181776556776555,
+            "spearman_ci95": [
+              0.6827055101460398,
+              0.8974633341836264
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.4,
+          "n_trajectories": 64,
+          "coverage90": 0.953125,
+          "mean_E": 0.06919702046367818,
+          "median_E": 0.059941014318762725,
+          "mean_U_rel": 0.04578517402496458,
+          "median_U_rel": 0.046054420322880096,
+          "mean_U_rms": 0.01136512829672473,
+          "median_U_rms": 0.009058658137749153,
+          "mean_W_rel90": 2.2447051970081127,
+          "median_W_rel90": 2.2579055086172075,
+          "U_rel_q10": 0.02301439658109593,
+          "U_rel_median": 0.046054420322880096,
+          "U_rel_q90": 0.07032604920418734,
+          "U_rel_q90_minus_q10": 0.04731165262309141,
+          "U_rel_gap_over_median": 1.0272988410536288,
+          "W_rel90_q10": 1.1283245441728282,
+          "W_rel90_median": 2.2579055086172075,
+          "W_rel90_q90": 3.447868256383889,
+          "W_rel90_q90_minus_q10": 2.3195437122110607,
+          "W_rel90_gap_over_median": 1.0272988410536283,
+          "current_error_association": {
+            "n_trajectories": 64,
+            "pearson": 0.7108500340476127,
+            "pearson_ci95": [
+              0.5792447741095595,
+              0.8368718756177433
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8166666666666665,
+            "spearman_ci95": [
+              0.6807749045043147,
+              0.8962142446734207
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.5,
+          "n_trajectories": 64,
+          "coverage90": 0.984375,
+          "mean_E": 0.08285563135726179,
+          "median_E": 0.07158073125600414,
+          "mean_U_rel": 0.055177505681376436,
+          "median_U_rel": 0.05450583159579864,
+          "mean_U_rms": 0.013617233924318566,
+          "median_U_rms": 0.01082450591284399,
+          "mean_W_rel90": 2.9612786598628107,
+          "median_W_rel90": 2.925231105493645,
+          "U_rel_q10": 0.027678391613936388,
+          "U_rel_median": 0.05450583159579864,
+          "U_rel_q90": 0.08497136412284569,
+          "U_rel_q90_minus_q10": 0.0572929725089093,
+          "U_rel_gap_over_median": 1.0511347287347048,
+          "W_rel90_q10": 1.4854500835716464,
+          "W_rel90_median": 2.925231105493645,
+          "W_rel90_q90": 4.560262088131029,
+          "W_rel90_q90_minus_q10": 3.0748120045593827,
+          "W_rel90_gap_over_median": 1.0511347287347046,
+          "current_error_association": {
+            "n_trajectories": 64,
+            "pearson": 0.7086244153091793,
+            "pearson_ci95": [
+              0.5663873213256119,
+              0.8378600014802705
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8073260073260072,
+            "spearman_ci95": [
+              0.6683060254916395,
+              0.8883245234026683
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.6,
+          "n_trajectories": 64,
+          "coverage90": 0.984375,
+          "mean_E": 0.09567824408794501,
+          "median_E": 0.08440297441616114,
+          "mean_U_rel": 0.0644005987709019,
+          "median_U_rel": 0.06170824312274108,
+          "mean_U_rms": 0.015782632465506086,
+          "median_U_rms": 0.012593252327899613,
+          "mean_W_rel90": 3.4506060611701113,
+          "median_W_rel90": 3.3063487266782623,
+          "U_rel_q10": 0.03236666012856737,
+          "U_rel_median": 0.06170824312274108,
+          "U_rel_q90": 0.09955344466399771,
+          "U_rel_q90_minus_q10": 0.06718678453543034,
+          "U_rel_gap_over_median": 1.088781354571903,
+          "W_rel90_q10": 1.7342166959778322,
+          "W_rel90_median": 3.3063487266782623,
+          "W_rel90_q90": 5.334107541297676,
+          "W_rel90_q90_minus_q10": 3.599890845319844,
+          "W_rel90_gap_over_median": 1.0887813545719027,
+          "current_error_association": {
+            "n_trajectories": 64,
+            "pearson": 0.7104956469610559,
+            "pearson_ci95": [
+              0.5629817625497195,
+              0.8401409143516173
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.793635531135531,
+            "spearman_ci95": [
+              0.650276669856911,
+              0.8800812694539062
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.7,
+          "n_trajectories": 64,
+          "coverage90": 0.96875,
+          "mean_E": 0.10779723728492412,
+          "median_E": 0.09437229628555405,
+          "mean_U_rel": 0.07353783475977094,
+          "median_U_rel": 0.0704072146737348,
+          "mean_U_rms": 0.017881770135907454,
+          "median_U_rms": 0.014275915502738332,
+          "mean_W_rel90": 3.508274962690252,
+          "median_W_rel90": 3.358922236961862,
+          "U_rel_q10": 0.03653548925505508,
+          "U_rel_median": 0.0704072146737348,
+          "U_rel_q90": 0.11506191004741706,
+          "U_rel_q90_minus_q10": 0.07852642079236198,
+          "U_rel_gap_over_median": 1.1153178144633524,
+          "W_rel90_q10": 1.7430013083995204,
+          "W_rel90_median": 3.358922236961862,
+          "W_rel90_q90": 5.489267116680179,
+          "W_rel90_q90_minus_q10": 3.7462658082806586,
+          "W_rel90_gap_over_median": 1.1153178144633524,
+          "current_error_association": {
+            "n_trajectories": 64,
+            "pearson": 0.7149413365281048,
+            "pearson_ci95": [
+              0.563030624189801,
+              0.8434533364599281
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7809981684981684,
+            "spearman_ci95": [
+              0.6317110244233057,
+              0.8738829983781657
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.8,
+          "n_trajectories": 64,
+          "coverage90": 0.96875,
+          "mean_E": 0.11932492418050364,
+          "median_E": 0.1029379621052936,
+          "mean_U_rel": 0.08265268299983694,
+          "median_U_rel": 0.0798171300787686,
+          "mean_U_rms": 0.01993023987970463,
+          "median_U_rms": 0.015888983885978446,
+          "mean_W_rel90": 3.9583932689032477,
+          "median_W_rel90": 3.822593278037881,
+          "U_rel_q10": 0.04062675836250045,
+          "U_rel_median": 0.0798171300787686,
+          "U_rel_q90": 0.13023451681588244,
+          "U_rel_q90_minus_q10": 0.08960775845338198,
+          "U_rel_gap_over_median": 1.1226632474125713,
+          "W_rel90_q10": 1.9456922752259322,
+          "W_rel90_median": 3.822593278037881,
+          "W_rel90_q90": 6.2371772582854055,
+          "W_rel90_q90_minus_q10": 4.2914849830594735,
+          "W_rel90_gap_over_median": 1.1226632474125713,
+          "current_error_association": {
+            "n_trajectories": 64,
+            "pearson": 0.7209513330850896,
+            "pearson_ci95": [
+              0.5653735405744278,
+              0.8493837701363555
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7795787545787545,
+            "spearman_ci95": [
+              0.6220206271436955,
+              0.8771681517049672
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 0.9,
+          "n_trajectories": 64,
+          "coverage90": 0.9375,
+          "mean_E": 0.13035974523957372,
+          "median_E": 0.11407252687122842,
+          "mean_U_rel": 0.09179160094912056,
+          "median_U_rel": 0.0881425793615505,
+          "mean_U_rms": 0.02193916910533909,
+          "median_U_rms": 0.017314143507826913,
+          "mean_W_rel90": 4.373596473022431,
+          "median_W_rel90": 4.19973145944428,
+          "U_rel_q10": 0.044232850990139023,
+          "U_rel_median": 0.0881425793615505,
+          "U_rel_q90": 0.14591527373532098,
+          "U_rel_q90_minus_q10": 0.10168242274518197,
+          "U_rel_gap_over_median": 1.1536129698235018,
+          "W_rel90_q10": 2.107563645059753,
+          "W_rel90_median": 4.19973145944428,
+          "W_rel90_q90": 6.952428326450456,
+          "W_rel90_q90_minus_q10": 4.844864681390703,
+          "W_rel90_gap_over_median": 1.1536129698235014,
+          "current_error_association": {
+            "n_trajectories": 64,
+            "pearson": 0.7278004459446883,
+            "pearson_ci95": [
+              0.568879755350439,
+              0.8535927996203627
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7814102564102563,
+            "spearman_ci95": [
+              0.6258457811943063,
+              0.876219361202877
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        },
+        {
+          "time": 1.0,
+          "n_trajectories": 64,
+          "coverage90": 0.921875,
+          "mean_E": 0.1409811065630394,
+          "median_E": 0.12303261981568994,
+          "mean_U_rel": 0.10096641597070255,
+          "median_U_rel": 0.09629165487468774,
+          "mean_U_rms": 0.023910626115045505,
+          "median_U_rms": 0.018483862902458813,
+          "mean_W_rel90": 5.028722888316722,
+          "median_W_rel90": 4.795892219871844,
+          "U_rel_q10": 0.047326613119007654,
+          "U_rel_median": 0.09629165487468774,
+          "U_rel_q90": 0.16068526972927252,
+          "U_rel_q90_minus_q10": 0.11335865661026487,
+          "U_rel_gap_over_median": 1.1772427917848938,
+          "W_rel90_q10": 2.3571444061867317,
+          "W_rel90_median": 4.795892219871844,
+          "W_rel90_q90": 8.003073952208112,
+          "W_rel90_q90_minus_q10": 5.64592954602138,
+          "W_rel90_gap_over_median": 1.1772427917848935,
+          "current_error_association": {
+            "n_trajectories": 64,
+            "pearson": 0.7348672939503044,
+            "pearson_ci95": [
+              0.574593813419856,
+              0.8576533093944534
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7798992673992673,
+            "spearman_ci95": [
+              0.6264603789953437,
+              0.8779277970171767
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          }
+        }
+      ],
+      "early_warning": [
+        {
+          "time": 0.1,
+          "target_time": 0.2,
+          "lag": 1,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7935834307517634,
+            "pearson_ci95": [
+              0.7161042577189276,
+              0.8707840508384881
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8524725274725273,
+            "spearman_ci95": [
+              0.7515634622644604,
+              0.9091118994859422
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.995902519754658,
+            "pearson_ci95": [
+              0.9941667363344815,
+              0.9986435738858616
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9974816849816848,
+            "spearman_ci95": [
+              0.9914318049497074,
+              0.9989460183839465
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.3704848208918565,
+            "pearson_ci95": [
+              -0.0029785890084358677,
+              0.576911661116714
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.22472039700735336,
+            "spearman_ci95": [
+              -0.16889191988374394,
+              0.5008618021892289
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.8067210168462767,
+            "pearson_ci95": [
+              0.7265375115221991,
+              0.8776692654098014
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8540750915750914,
+            "spearman_ci95": [
+              0.7531482845558908,
+              0.91097782782339
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.017659870347040585,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7935834307517635,
+            "pearson_ci95": [
+              0.7161042577189277,
+              0.8707840508384882
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8524725274725273,
+            "spearman_ci95": [
+              0.7515634622644604,
+              0.9091118994859422
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.05216659677991849,
+            "pearson_ci95": [
+              -0.08949983883860091,
+              0.19863972680149222
+            ],
+            "pearson_invalid_bootstraps": 86,
+            "spearman": 0.10204184573688746,
+            "spearman_ci95": [
+              -0.07782962032494936,
+              0.2616431310289142
+            ],
+            "spearman_invalid_bootstraps": 86,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 3,
+          "future_error_mean_given_noncoverage": 0.04351830403224146,
+          "future_error_mean_given_coverage": 0.0383585804299335
+        },
+        {
+          "time": 0.2,
+          "target_time": 0.3,
+          "lag": 1,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7551630648975416,
+            "pearson_ci95": [
+              0.6531648063441136,
+              0.8528292489872114
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8327838827838826,
+            "spearman_ci95": [
+              0.706064102165647,
+              0.9037407616913704
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.9975771259821583,
+            "pearson_ci95": [
+              0.9963190577368892,
+              0.9991990711511395
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9970238095238093,
+            "spearman_ci95": [
+              0.9904645672900625,
+              0.9984874925943189
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.3950903128381139,
+            "pearson_ci95": [
+              0.07687624073362838,
+              0.5913379643139379
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.13598261342342588,
+            "spearman_ci95": [
+              -0.18107100330807815,
+              0.40119666867599507
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.7809964014254359,
+            "pearson_ci95": [
+              0.6797344433137126,
+              0.869662987037127
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8380036630036629,
+            "spearman_ci95": [
+              0.7195567659728971,
+              0.9043103540196672
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.015930185943766557,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7551630648975415,
+            "pearson_ci95": [
+              0.6531648063441136,
+              0.8528292489872116
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8327838827838826,
+            "spearman_ci95": [
+              0.706064102165647,
+              0.9037407616913704
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.1701978978850304,
+            "pearson_ci95": [
+              0.04737838532918122,
+              0.33866091324132375
+            ],
+            "pearson_invalid_bootstraps": 262,
+            "spearman": 0.19445218104942028,
+            "spearman_ci95": [
+              0.08528343084934445,
+              0.33575417005699887
+            ],
+            "spearman_invalid_bootstraps": 262,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 2,
+          "future_error_mean_given_noncoverage": 0.08206826919811917,
+          "future_error_mean_given_coverage": 0.05364231742463693
+        },
+        {
+          "time": 0.3,
+          "target_time": 0.4,
+          "lag": 1,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7345144513644796,
+            "pearson_ci95": [
+              0.6150698719729382,
+              0.8446513430267029
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8258241758241757,
+            "spearman_ci95": [
+              0.6954442530757321,
+              0.9023745657904227
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.9982352767472288,
+            "pearson_ci95": [
+              0.9971260178331284,
+              0.9993903947350843
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9979395604395602,
+            "spearman_ci95": [
+              0.9928049187766719,
+              0.9990833288450417
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.3941427754144078,
+            "pearson_ci95": [
+              0.0990829628793579,
+              0.5799097286280545
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.25297464334930736,
+            "spearman_ci95": [
+              -0.026976163495606203,
+              0.4528194664781082
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.7678021505632042,
+            "pearson_ci95": [
+              0.6541956110116542,
+              0.8655551305951008
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8193223443223442,
+            "spearman_ci95": [
+              0.6877868872001864,
+              0.8983206050428708
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.01466639204611995,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7345144513644798,
+            "pearson_ci95": [
+              0.6150698719729382,
+              0.8446513430267028
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8258241758241757,
+            "spearman_ci95": [
+              0.6954442530757321,
+              0.9023745657904227
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.16258499415734595,
+            "pearson_ci95": [
+              -0.06383713813502058,
+              0.37264637210828894
+            ],
+            "pearson_invalid_bootstraps": 22,
+            "spearman": 0.1782084222427261,
+            "spearman_ci95": [
+              -0.046044415080249514,
+              0.3656113005127314
+            ],
+            "spearman_invalid_bootstraps": 22,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 4,
+          "future_error_mean_given_noncoverage": 0.09207474941042443,
+          "future_error_mean_given_coverage": 0.06767183853389509
+        },
+        {
+          "time": 0.4,
+          "target_time": 0.5,
+          "lag": 1,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7243223103682878,
+            "pearson_ci95": [
+              0.5942756705986091,
+              0.8448555294725683
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8229853479853478,
+            "spearman_ci95": [
+              0.6935142210580131,
+              0.8978806556548556
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.9985717763820409,
+            "pearson_ci95": [
+              0.9975916968637113,
+              0.9994771490184947
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9983974358974357,
+            "spearman_ci95": [
+              0.9936302558225742,
+              0.9994501356044031
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.38553942712318423,
+            "pearson_ci95": [
+              0.10749386757256874,
+              0.5719313021728404
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.23354573240911172,
+            "spearman_ci95": [
+              -0.0751111954132409,
+              0.45695904795878184
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.760554361657932,
+            "pearson_ci95": [
+              0.6388113961079588,
+              0.8596171678290423
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8113553113553112,
+            "spearman_ci95": [
+              0.6821488904431484,
+              0.8894046883160174
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.013658610893583601,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7243223103682879,
+            "pearson_ci95": [
+              0.5942756705986091,
+              0.8448555294725684
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8229853479853478,
+            "spearman_ci95": [
+              0.6935142210580131,
+              0.8978806556548556
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.1492309363524024,
+            "pearson_ci95": [
+              -0.17499293722446235,
+              0.4063335273050901
+            ],
+            "pearson_invalid_bootstraps": 93,
+            "spearman": 0.12605169179262568,
+            "spearman_ci95": [
+              -0.20946805492706944,
+              0.3915046760812117
+            ],
+            "spearman_invalid_bootstraps": 93,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 3,
+          "future_error_mean_given_noncoverage": 0.11173057753028921,
+          "future_error_mean_given_coverage": 0.08143555203727683
+        },
+        {
+          "time": 0.5,
+          "target_time": 0.6,
+          "lag": 1,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7207914624392744,
+            "pearson_ci95": [
+              0.5829598922820376,
+              0.8454738819418578
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.803617216117216,
+            "spearman_ci95": [
+              0.6630440320613152,
+              0.8848822939617712
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.9987668867123904,
+            "pearson_ci95": [
+              0.997897406588012,
+              0.9995032270411166
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9988553113553111,
+            "spearman_ci95": [
+              0.9952784321011008,
+              0.9996332884684647
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.3722835371288366,
+            "pearson_ci95": [
+              0.0999932186304829,
+              0.5618322152177528
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": -0.09865227903322728,
+            "spearman_ci95": [
+              -0.28478517271822695,
+              0.17214686023001843
+            ],
+            "spearman_invalid_bootstraps": 1,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.7553570128003404,
+            "pearson_ci95": [
+              0.6313867705682095,
+              0.8554552080123189
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8001373626373625,
+            "spearman_ci95": [
+              0.6700024220000242,
+              0.8807032530077267
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.012822612730683221,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7207914624392745,
+            "pearson_ci95": [
+              0.5829598922820377,
+              0.8454738819418578
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.803617216117216,
+            "spearman_ci95": [
+              0.6630440320613152,
+              0.8848822939617712
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.205383472633614,
+            "pearson_ci95": [
+              0.16959170791350345,
+              0.3841481819240051
+            ],
+            "pearson_invalid_bootstraps": 717,
+            "spearman": 0.19437403723927463,
+            "spearman_ci95": [
+              0.17398941056789882,
+              0.3543671840812219
+            ],
+            "spearman_invalid_bootstraps": 717,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 1,
+          "future_error_mean_given_noncoverage": 0.17544524209596507,
+          "future_error_mean_given_coverage": 0.09441210126242086
+        },
+        {
+          "time": 0.6,
+          "target_time": 0.7,
+          "lag": 1,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.721503981630805,
+            "pearson_ci95": [
+              0.5760155831980477,
+              0.8469926828344014
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.796153846153846,
+            "spearman_ci95": [
+              0.6538056470223055,
+              0.8818313229478468
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.998891310739428,
+            "pearson_ci95": [
+              0.9981089782974598,
+              0.999517755838228
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.998260073260073,
+            "spearman_ci95": [
+              0.9931701268651829,
+              0.9991751074937625
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.3560809088442711,
+            "pearson_ci95": [
+              0.08603826501990118,
+              0.5461627467035214
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.10869198920835645,
+            "spearman_ci95": [
+              -0.17311558522323395,
+              0.3346058549510272
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.7498814074599478,
+            "pearson_ci95": [
+              0.6253281421046186,
+              0.8500499061311528
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7837912087912087,
+            "spearman_ci95": [
+              0.6537055477966963,
+              0.8684189623365146
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.012118993196979098,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7215039816308051,
+            "pearson_ci95": [
+              0.5760155831980477,
+              0.8469926828344014
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.796153846153846,
+            "spearman_ci95": [
+              0.6538056470223055,
+              0.8818313229478468
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.21114879286320212,
+            "pearson_ci95": [
+              0.1755576463875081,
+              0.39353449639824456
+            ],
+            "pearson_invalid_bootstraps": 717,
+            "spearman": 0.19437403723927463,
+            "spearman_ci95": [
+              0.17398941056789882,
+              0.3543722609330951
+            ],
+            "spearman_invalid_bootstraps": 717,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 1,
+          "future_error_mean_given_noncoverage": 0.19914527965914283,
+          "future_error_mean_given_coverage": 0.1063472683583492
+        },
+        {
+          "time": 0.7,
+          "target_time": 0.8,
+          "lag": 1,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.724898651399847,
+            "pearson_ci95": [
+              0.5748166725947665,
+              0.8491352845283048
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7829670329670328,
+            "spearman_ci95": [
+              0.6292856325721972,
+              0.8783259177465839
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.9989792095245411,
+            "pearson_ci95": [
+              0.9982808740652601,
+              0.9995177788082549
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9980311355311353,
+            "spearman_ci95": [
+              0.9927520668718437,
+              0.9993584018707086
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.33837361668939225,
+            "pearson_ci95": [
+              0.07217303386822381,
+              0.533398353934391
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.08951888165454878,
+            "spearman_ci95": [
+              -0.24204655205215472,
+              0.3326862227419919
+            ],
+            "spearman_invalid_bootstraps": 1,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.7431558366862687,
+            "pearson_ci95": [
+              0.62065218510374,
+              0.8429131818581631
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7690934065934064,
+            "spearman_ci95": [
+              0.6281319150904722,
+              0.8624631064520943
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.011527686895579545,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7248986513998469,
+            "pearson_ci95": [
+              0.5748166725947664,
+              0.8491352845283046
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7829670329670328,
+            "spearman_ci95": [
+              0.6292856325721972,
+              0.8783259177465839
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.06980091703177968,
+            "pearson_ci95": [
+              -0.22328951373091255,
+              0.37043335795998755
+            ],
+            "pearson_invalid_bootstraps": 278,
+            "spearman": 0.038890436209884055,
+            "spearman_ci95": [
+              -0.25820339915273516,
+              0.3016218436327478
+            ],
+            "spearman_invalid_bootstraps": 278,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 2,
+          "future_error_mean_given_noncoverage": 0.14253543018761256,
+          "future_error_mean_given_coverage": 0.11857619818027436
+        },
+        {
+          "time": 0.8,
+          "target_time": 0.9,
+          "lag": 1,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7299225032681311,
+            "pearson_ci95": [
+              0.5767778080148153,
+              0.8527825295243578
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7846153846153845,
+            "spearman_ci95": [
+              0.6321227925023927,
+              0.8796234244406426
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.999052486741863,
+            "pearson_ci95": [
+              0.998443667026286,
+              0.9995269410639693
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9982142857142855,
+            "spearman_ci95": [
+              0.9930795918858162,
+              0.9992210236550961
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.32010386968818916,
+            "pearson_ci95": [
+              0.052708244702038776,
+              0.521661303158376
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.17183561145913723,
+            "spearman_ci95": [
+              -0.2187294780484705,
+              0.43240269564996997
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.7352611203422847,
+            "pearson_ci95": [
+              0.6159288493482288,
+              0.8352160934881778
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7594322344322343,
+            "spearman_ci95": [
+              0.6105841958650632,
+              0.8615433088909255
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.011034821059070058,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.729922503268131,
+            "pearson_ci95": [
+              0.5767778080148152,
+              0.8527825295243581
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7846153846153845,
+            "spearman_ci95": [
+              0.6321227925023927,
+              0.8796234244406426
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.3104273700982745,
+            "pearson_ci95": [
+              0.17497481809799972,
+              0.4972517169328542
+            ],
+            "pearson_invalid_bootstraps": 279,
+            "spearman": 0.26737174894295285,
+            "spearman_ci95": [
+              0.1535727731008486,
+              0.42411034514221585
+            ],
+            "spearman_invalid_bootstraps": 279,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 2,
+          "future_error_mean_given_noncoverage": 0.2421127126344081,
+          "future_error_mean_given_coverage": 0.1267548108074823
+        },
+        {
+          "time": 0.9,
+          "target_time": 1.0,
+          "lag": 1,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7357450379644971,
+            "pearson_ci95": [
+              0.5798896458741765,
+              0.8574087398673638
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7852564102564101,
+            "spearman_ci95": [
+              0.6341894141448298,
+              0.879430751848633
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.9991327397394578,
+            "pearson_ci95": [
+              0.9986065351683749,
+              0.9995507295684429
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9989926739926738,
+            "spearman_ci95": [
+              0.9956448988012012,
+              0.9995417691718017
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.30032246546229596,
+            "pearson_ci95": [
+              0.025525409076349717,
+              0.51248322862289
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.16546337351377477,
+            "spearman_ci95": [
+              -0.24204909662236637,
+              0.4389955526027323
+            ],
+            "spearman_invalid_bootstraps": 1,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.7266816121058267,
+            "pearson_ci95": [
+              0.6033736554448701,
+              0.8286239266982911
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7361263736263735,
+            "spearman_ci95": [
+              0.5718523203953947,
+              0.8446430084059268
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.010621361323465668,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 1,
+            "non_event_count": 50,
+            "selected_count": 11,
+            "hits": 1,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              37
+            ],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.735745037964497,
+            "pearson_ci95": [
+              0.5798896458741764,
+              0.8574087398673637
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7852564102564101,
+            "spearman_ci95": [
+              0.6341894141448298,
+              0.879430751848633
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.16699860172420708,
+            "pearson_ci95": [
+              -0.1427696219022902,
+              0.4582652798586251
+            ],
+            "pearson_invalid_bootstraps": 36,
+            "spearman": 0.1397713115629224,
+            "spearman_ci95": [
+              -0.1291342313798155,
+              0.3802323588342418
+            ],
+            "spearman_invalid_bootstraps": 36,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 4,
+          "future_error_mean_given_noncoverage": 0.18583891073442074,
+          "future_error_mean_given_coverage": 0.13799058628494726
+        },
+        {
+          "time": 0.1,
+          "target_time": 0.3,
+          "lag": 2,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.8044104487690624,
+            "pearson_ci95": [
+              0.7261326358381618,
+              0.8765775489890171
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8524267399267398,
+            "spearman_ci95": [
+              0.7517347049710118,
+              0.9102121113265932
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.9873168983988133,
+            "pearson_ci95": [
+              0.9817235787141749,
+              0.9957770707251201
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.992216117216117,
+            "spearman_ci95": [
+              0.980423458764084,
+              0.9958750672445223
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.3855256920404609,
+            "pearson_ci95": [
+              0.025612507197673273,
+              0.589663499017489
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.1944216469856294,
+            "spearman_ci95": [
+              -0.1690893932721174,
+              0.5004866938936134
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.8122123780264162,
+            "pearson_ci95": [
+              0.7293581320367637,
+              0.882993729520099
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8564560439560438,
+            "spearman_ci95": [
+              0.756242837538923,
+              0.9133962183884948
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.03359005629080714,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.8044104487690628,
+            "pearson_ci95": [
+              0.7261326358381618,
+              0.8765775489890173
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8524267399267398,
+            "spearman_ci95": [
+              0.7517347049710118,
+              0.9102121113265932
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.05758324314944402,
+            "pearson_ci95": [
+              -0.08934043924400825,
+              0.2073995311726433
+            ],
+            "pearson_invalid_bootstraps": 86,
+            "spearman": 0.10604348674617717,
+            "spearman_ci95": [
+              -0.07782962032494936,
+              0.26748710710166085
+            ],
+            "spearman_invalid_bootstraps": 86,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 3,
+          "future_error_mean_given_noncoverage": 0.062076199296486854,
+          "future_error_mean_given_coverage": 0.05415953476777487
+        },
+        {
+          "time": 0.2,
+          "target_time": 0.4,
+          "lag": 2,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7669539040310253,
+            "pearson_ci95": [
+              0.6655112348588336,
+              0.8598475234422107
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8383699633699633,
+            "spearman_ci95": [
+              0.7131910277265423,
+              0.9069679242009042
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.9917237231367181,
+            "pearson_ci95": [
+              0.9870601959851574,
+              0.9972010318209694
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9928113553113551,
+            "spearman_ci95": [
+              0.9810693278332455,
+              0.9959221123455964
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.40019070491606146,
+            "pearson_ci95": [
+              0.08430045707768424,
+              0.5962239138389106
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.22338083574830667,
+            "spearman_ci95": [
+              -0.06239619607685316,
+              0.47510268503668657
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.7851540399784387,
+            "pearson_ci95": [
+              0.6824060255716907,
+              0.8710879389764479
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8347527472527471,
+            "spearman_ci95": [
+              0.7152324976620902,
+              0.901967580327753
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.030596577989886506,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7669539040310255,
+            "pearson_ci95": [
+              0.6655112348588337,
+              0.8598475234422109
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8383699633699633,
+            "spearman_ci95": [
+              0.7131910277265423,
+              0.9069679242009042
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.18069305837246488,
+            "pearson_ci95": [
+              0.052978803728272204,
+              0.3500326512316141
+            ],
+            "pearson_invalid_bootstraps": 262,
+            "spearman": 0.19931348557565579,
+            "spearman_ci95": [
+              0.08528343084934445,
+              0.3441406010088546
+            ],
+            "spearman_invalid_bootstraps": 262,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 2,
+          "future_error_mean_given_noncoverage": 0.10574885142388243,
+          "future_error_mean_given_coverage": 0.06801792914238128
+        },
+        {
+          "time": 0.3,
+          "target_time": 0.5,
+          "lag": 2,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7460080845664684,
+            "pearson_ci95": [
+              0.6284627899754727,
+              0.8534168837574008
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8305860805860804,
+            "spearman_ci95": [
+              0.7048567200437353,
+              0.9033180428263922
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.9936577713306365,
+            "pearson_ci95": [
+              0.9895123258698545,
+              0.9977596950357521
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9949175824175822,
+            "spearman_ci95": [
+              0.9849636623208592,
+              0.9973871279367013
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.39750901537387073,
+            "pearson_ci95": [
+              0.10266152266295506,
+              0.5872246840908836
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.2861526434655658,
+            "spearman_ci95": [
+              0.03883130802108242,
+              0.47274736899025915
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.770429452200001,
+            "pearson_ci95": [
+              0.6585234975800724,
+              0.8651208613528671
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8144688644688644,
+            "spearman_ci95": [
+              0.6862825357117774,
+              0.8919442508982854
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.028325002939703553,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7460080845664685,
+            "pearson_ci95": [
+              0.6284627899754727,
+              0.8534168837574009
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8305860805860804,
+            "spearman_ci95": [
+              0.7048567200437353,
+              0.9033180428263922
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.1687420442835417,
+            "pearson_ci95": [
+              -0.06496718938032402,
+              0.3832938882839091
+            ],
+            "pearson_invalid_bootstraps": 22,
+            "spearman": 0.1851969878208722,
+            "spearman_ci95": [
+              -0.04303373514012064,
+              0.3727819352653739
+            ],
+            "spearman_invalid_bootstraps": 22,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 4,
+          "future_error_mean_given_noncoverage": 0.11089879233059921,
+          "future_error_mean_given_coverage": 0.08098608729237262
+        },
+        {
+          "time": 0.4,
+          "target_time": 0.6,
+          "lag": 2,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7351779736445732,
+            "pearson_ci95": [
+              0.6069330045942519,
+              0.8519972861941932
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8182234432234431,
+            "spearman_ci95": [
+              0.688466799092778,
+              0.8945165899275663
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.9947022986744698,
+            "pearson_ci95": [
+              0.991081401811714,
+              0.9979777332594194
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9964743589743588,
+            "spearman_ci95": [
+              0.9889047227203123,
+              0.9983045410805114
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.3885620033200228,
+            "pearson_ci95": [
+              0.11234967023013909,
+              0.5786521736068639
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.09161934516026089,
+            "spearman_ci95": [
+              -0.19226223963286732,
+              0.3720141550570218
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.7614226288063621,
+            "pearson_ci95": [
+              0.6421021882323344,
+              0.8590439925448288
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8082417582417581,
+            "spearman_ci95": [
+              0.6801263973269002,
+              0.8861946242715341
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.026481223624266824,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7351779736445734,
+            "pearson_ci95": [
+              0.6069330045942519,
+              0.8519972861941935
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8182234432234431,
+            "spearman_ci95": [
+              0.688466799092778,
+              0.8945165899275663
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.16030871355125367,
+            "pearson_ci95": [
+              -0.16777038283607126,
+              0.41697132193785563
+            ],
+            "pearson_invalid_bootstraps": 93,
+            "spearman": 0.1300533328019154,
+            "spearman_ci95": [
+              -0.18983522394096855,
+              0.3811254827683664
+            ],
+            "spearman_invalid_bootstraps": 93,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 3,
+          "future_error_mean_given_noncoverage": 0.1310493712562332,
+          "future_error_mean_given_coverage": 0.0939386804567177
+        },
+        {
+          "time": 0.5,
+          "target_time": 0.7,
+          "lag": 2,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7308780231139103,
+            "pearson_ci95": [
+              0.5924647858453038,
+              0.8505737508614962
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8051739926739926,
+            "spearman_ci95": [
+              0.6671683210602602,
+              0.8862414150609507
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.9953340303372694,
+            "pearson_ci95": [
+              0.9920515873039041,
+              0.9980553517673699
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9959249084249082,
+            "spearman_ci95": [
+              0.9874818684584097,
+              0.9978915089686766
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.37543320353661475,
+            "pearson_ci95": [
+              0.10118475005942683,
+              0.5686486933489439
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.021381510562148834,
+            "spearman_ci95": [
+              -0.20337342920204746,
+              0.27135486379014057
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.7543080670128705,
+            "pearson_ci95": [
+              0.6318043180434451,
+              0.8531863972326745
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7945970695970694,
+            "spearman_ci95": [
+              0.6656097073054663,
+              0.8787862121336094
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.02494160592766232,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7308780231139105,
+            "pearson_ci95": [
+              0.5924647858453039,
+              0.8505737508614961
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.8051739926739926,
+            "spearman_ci95": [
+              0.6671683210602602,
+              0.8862414150609507
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.21114879286320212,
+            "pearson_ci95": [
+              0.1755576463875081,
+              0.39353449639824456
+            ],
+            "pearson_invalid_bootstraps": 717,
+            "spearman": 0.19437403723927463,
+            "spearman_ci95": [
+              0.17398941056789882,
+              0.3543722609330951
+            ],
+            "spearman_invalid_bootstraps": 717,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 1,
+          "future_error_mean_given_noncoverage": 0.19914527965914283,
+          "future_error_mean_given_coverage": 0.1063472683583492
+        },
+        {
+          "time": 0.6,
+          "target_time": 0.8,
+          "lag": 2,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7307687220665946,
+            "pearson_ci95": [
+              0.5879283178541853,
+              0.850025753688273
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7968864468864467,
+            "spearman_ci95": [
+              0.6548903474028722,
+              0.883909681490094
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.9957563392257291,
+            "pearson_ci95": [
+              0.9928052545097075,
+              0.9980712578999213
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9950091575091573,
+            "spearman_ci95": [
+              0.9843293044085487,
+              0.9974337971177583
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.35960264712436746,
+            "pearson_ci95": [
+              0.0896056997514317,
+              0.5524459993713224
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.1187958531368371,
+            "spearman_ci95": [
+              -0.16756267579215428,
+              0.360415842109852
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.7469839010345017,
+            "pearson_ci95": [
+              0.6267041566338212,
+              0.8458178065033516
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7776556776556776,
+            "spearman_ci95": [
+              0.646082585788526,
+              0.8637915941436993
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.023646680092558645,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7307687220665944,
+            "pearson_ci95": [
+              0.5879283178541851,
+              0.850025753688273
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7968864468864467,
+            "spearman_ci95": [
+              0.6548903474028722,
+              0.883909681490094
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.2160437606035876,
+            "pearson_ci95": [
+              0.17993474739465098,
+              0.40112125282226396
+            ],
+            "pearson_invalid_bootstraps": 717,
+            "spearman": 0.20119417889679303,
+            "spearman_ci95": [
+              0.1876119964356077,
+              0.3663303006598627
+            ],
+            "spearman_invalid_bootstraps": 717,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 1,
+          "future_error_mean_given_noncoverage": 0.2217378176159246,
+          "future_error_mean_given_coverage": 0.11769932269740174
+        },
+        {
+          "time": 0.7,
+          "target_time": 0.9,
+          "lag": 2,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7333053351779395,
+            "pearson_ci95": [
+              0.5856017745321185,
+              0.8529341815428674
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.78768315018315,
+            "spearman_ci95": [
+              0.6387772082467786,
+              0.8803944728312728
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.9960789315097032,
+            "pearson_ci95": [
+              0.9934517336346066,
+              0.9980765362993933
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.9944139194139192,
+            "spearman_ci95": [
+              0.9848221149696257,
+              0.997205638763865
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.34220260220753956,
+            "pearson_ci95": [
+              0.07309331959694651,
+              0.5391258534755216
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.1675926744259029,
+            "spearman_ci95": [
+              -0.17118156484823566,
+              0.43898850905931247
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.7387277608185966,
+            "pearson_ci95": [
+              0.6180829959854371,
+              0.8384555644217796
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7654304029304028,
+            "spearman_ci95": [
+              0.6225459205080742,
+              0.8615516369855734
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.022562507954649605,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 0,
+            "non_event_count": 51,
+            "selected_count": 11,
+            "hits": 0,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.7333053351779396,
+            "pearson_ci95": [
+              0.5856017745321184,
+              0.8529341815428673
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.78768315018315,
+            "spearman_ci95": [
+              0.6387772082467786,
+              0.8803944728312728
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.07786124387718893,
+            "pearson_ci95": [
+              -0.22885087801452467,
+              0.39150631036620825
+            ],
+            "pearson_invalid_bootstraps": 278,
+            "spearman": 0.034029131683648545,
+            "spearman_ci95": [
+              -0.27021595506613844,
+              0.3016218436327478
+            ],
+            "spearman_invalid_bootstraps": 278,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 2,
+          "future_error_mean_given_noncoverage": 0.1583895708492618,
+          "future_error_mean_given_coverage": 0.12945555731668057
+        },
+        {
+          "time": 0.8,
+          "target_time": 1.0,
+          "lag": 2,
+          "n_trajectories": 64,
+          "uncertainty_future": {
+            "n_trajectories": 64,
+            "pearson": 0.737381248877755,
+            "pearson_ci95": [
+              0.5873583226814998,
+              0.8566229617754563
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7882326007326006,
+            "spearman_ci95": [
+              0.6389493961320133,
+              0.8815150052854399
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "current_error_future": {
+            "n_trajectories": 64,
+            "pearson": 0.9963882880043424,
+            "pearson_ci95": [
+              0.9941697592711582,
+              0.9981511528549405
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.996657509157509,
+            "spearman_ci95": [
+              0.9896865816945859,
+              0.9979378183488702
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "partial_controlling_current": {
+            "n_trajectories": 64,
+            "pearson": 0.32346091586697745,
+            "pearson_ci95": [
+              0.05040570137903533,
+              0.5295669021225022
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.2200645036168604,
+            "spearman_ci95": [
+              -0.18847283857433933,
+              0.5012020986840379
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "uncertainty_delta_error": {
+            "n_trajectories": 64,
+            "pearson": 0.7297875802982794,
+            "pearson_ci95": [
+              0.6098632580188195,
+              0.8316093274035333
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7476190476190475,
+            "spearman_ci95": [
+              0.589318532835526,
+              0.8549512758054129
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "mean_delta_error": 0.021656182382535725,
+          "new_failure": {
+            "eligible_count": 51,
+            "excluded_already_high_count": 13,
+            "event_count": 1,
+            "non_event_count": 50,
+            "selected_count": 11,
+            "hits": 1,
+            "auroc": null,
+            "precision": null,
+            "recall": null,
+            "status": "unstable/undefined: require >= 5 events and non-events",
+            "event_indices": [
+              37
+            ],
+            "missed_event_indices": []
+          },
+          "width_future": {
+            "n_trajectories": 64,
+            "pearson": 0.737381248877755,
+            "pearson_ci95": [
+              0.5873583226814998,
+              0.8566229617754563
+            ],
+            "pearson_invalid_bootstraps": 0,
+            "spearman": 0.7882326007326006,
+            "spearman_ci95": [
+              0.6389493961320133,
+              0.8815150052854399
+            ],
+            "spearman_invalid_bootstraps": 0,
+            "status": "ok"
+          },
+          "noncoverage_future": {
+            "n_trajectories": 64,
+            "pearson": 0.32145342609264826,
+            "pearson_ci95": [
+              0.17699377095952246,
+              0.5134440425488577
+            ],
+            "pearson_invalid_bootstraps": 279,
+            "spearman": 0.27223305346918836,
+            "spearman_ci95": [
+              0.16716428550064522,
+              0.42737622139000375
+            ],
+            "spearman_invalid_bootstraps": 279,
+            "status": "ok"
+          },
+          "source_noncoverage_count": 2,
+          "future_error_mean_given_noncoverage": 0.26511159152555686,
+          "future_error_mean_given_coverage": 0.13697689737070012
+        }
+      ],
+      "growth_by_horizon": [
+        {
+          "time": 0.1,
+          "target_time": 0.2,
+          "n_trajectories": 64,
+          "pearson": 0.6848829273139568,
+          "pearson_ci95": [
+            0.5447988033011076,
+            0.8208189590612065
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7929945054945053,
+          "spearman_ci95": [
+            0.6469893906103742,
+            0.8813383751575569
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.2,
+          "target_time": 0.3,
+          "n_trajectories": 64,
+          "pearson": 0.6740805240302709,
+          "pearson_ci95": [
+            0.510846255396575,
+            0.8211176890042416
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7613095238095237,
+          "spearman_ci95": [
+            0.5936558055305513,
+            0.8627632594191721
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.3,
+          "target_time": 0.4,
+          "n_trajectories": 64,
+          "pearson": 0.6835795567235092,
+          "pearson_ci95": [
+            0.5077386037592386,
+            0.8291503333539545
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7376373626373625,
+          "spearman_ci95": [
+            0.5604086983149241,
+            0.852762585350765
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.4,
+          "target_time": 0.5,
+          "n_trajectories": 64,
+          "pearson": 0.7000283426750544,
+          "pearson_ci95": [
+            0.5205841012659356,
+            0.8401275831357771
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7478021978021977,
+          "spearman_ci95": [
+            0.573362410070073,
+            0.8580075304691097
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.5,
+          "target_time": 0.6,
+          "n_trajectories": 64,
+          "pearson": 0.715878949814939,
+          "pearson_ci95": [
+            0.5392734123063208,
+            0.8465269825349221
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7542582417582416,
+          "spearman_ci95": [
+            0.5794915799159647,
+            0.8638549285392859
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.6,
+          "target_time": 0.7,
+          "n_trajectories": 64,
+          "pearson": 0.7275752356811509,
+          "pearson_ci95": [
+            0.5561953346808197,
+            0.849877565429606
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.740613553113553,
+          "spearman_ci95": [
+            0.559499733032107,
+            0.8516752629975597
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.7,
+          "target_time": 0.8,
+          "n_trajectories": 64,
+          "pearson": 0.7339159420865419,
+          "pearson_ci95": [
+            0.5651860705793545,
+            0.850278900206446
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7252747252747251,
+          "spearman_ci95": [
+            0.5464035208361987,
+            0.8483239391439833
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.8,
+          "target_time": 0.9,
+          "n_trajectories": 64,
+          "pearson": 0.7342969186926073,
+          "pearson_ci95": [
+            0.5647269450301798,
+            0.8505030468322589
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.7171703296703296,
+          "spearman_ci95": [
+            0.5365744921373418,
+            0.8474592310526989
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        },
+        {
+          "time": 0.9,
+          "target_time": 1.0,
+          "n_trajectories": 64,
+          "pearson": 0.7254210961920418,
+          "pearson_ci95": [
+            0.5555065714103536,
+            0.8466500620554224
+          ],
+          "pearson_invalid_bootstraps": 0,
+          "spearman": 0.6880494505494504,
+          "spearman_ci95": [
+            0.4900763885726116,
+            0.825473242783727
+          ],
+          "spearman_invalid_bootstraps": 0,
+          "status": "ok"
+        }
+      ],
+      "pooled_growth_secondary_source_horizon_confounded": {
+        "n_trajectories": 64,
+        "pearson": 0.6978136210445163,
+        "pearson_ci95": [
+          0.5462095348700003,
+          0.821640919562957
+        ],
+        "pearson_invalid_bootstraps": 0,
+        "spearman": 0.7521515585361567,
+        "spearman_ci95": [
+          0.6084939728978521,
+          0.8517736753151853
+        ],
+        "spearman_invalid_bootstraps": 0,
+        "status": "ok"
+      },
+      "examples": [],
+      "origin": {
+        "archive": "data/stage4/fresh_id.npz",
+        "archive_sha256": "52292b4e91eb9aeb92277f429f0d126ba2a43e76f8f9cda6cd32c2347d12d9e2",
+        "predictions": "runs/stage8/error_awareness/fresh_id/raw_predictions.npz",
+        "predictions_sha256": "286b16e2f2171baaa41c25305533a1428d62679c36ab148bd1178fb71fe93423",
+        "members_and_spread": "retained in original verified raw_predictions.npz",
+        "role": "secondary retrospective replication; Stage 4/8B historical exposure"
+      },
+      "analysis_arrays_sha256": "da90018738bc7036ac7aa869f8fd06d00c359fbdb452ff13fff81c5787ce0517"
+    }
+  }
+}
